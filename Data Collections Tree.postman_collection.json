@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "6f9ed609-34b4-4727-b86e-2371047913c6",
+		"name": "Data Collections Tree",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert Data 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"device\",\n        \"val\": \"mobile\"\n    },\n    {\n        \"key\": \"country\",\n        \"val\": \"IN\"\n    }],\n    \"metrics\": [{\n        \"key\": \"WebReq\",\n        \"val\": 70\n    },\n    {\n        \"key\": \"TimeSpent\",\n        \"val\": 30\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/insert/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"insert",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Status",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dim\": [{\n        \"key\": \"device\",\n        \"val\": \"mobile\"\n    },\n    {\n        \"key\": \"country\",\n        \"val\": \"IN\"\n    }],\n    \"metrics\": [{\n        \"key\": \"WebReq\",\n        \"val\": 70\n    },\n    {\n        \"key\": \"TimeSpent\",\n        \"val\": 30\n    }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/v1/insert/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"insert",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Nov 2021 18:12:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "252"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"IN\": {\n            \"mobile\": {\n                \"WebReq\": 140,\n                \"TimeSpent\": 60\n            },\n            \"web\": {\n                \"WebReq\": 50,\n                \"TimeSpent\": 50\n            }\n        },\n        \"US\": {\n            \"web\": {\n                \"WebReq\": 110,\n                \"TimeSpent\": 60\n            },\n            \"mobile\": {\n                \"WebReq\": 80,\n                \"TimeSpent\": 70\n            },\n            \"tablet\": {\n                \"WebReq\": 30,\n                \"TimeSpent\": 50\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Insert Data 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"device\",\n        \"val\": \"web\"\n    },\n    {\n        \"key\": \"country\",\n        \"val\": \"US\"\n    }],\n    \"metrics\": [{\n        \"key\": \"WebReq\",\n        \"val\": 110\n    },\n    {\n        \"key\": \"TimeSpent\",\n        \"val\": 60\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/insert/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"insert",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Data 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"device\",\n        \"val\": \"mobile\"\n    },\n    {\n        \"key\": \"country\",\n        \"val\": \"US\"\n    }],\n    \"metrics\": [{\n        \"key\": \"WebReq\",\n        \"val\": 80\n    },\n    {\n        \"key\": \"TimeSpent\",\n        \"val\": 70\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/insert/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"insert",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Data 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"device\",\n        \"val\": \"tablet\"\n    },\n    {\n        \"key\": \"country\",\n        \"val\": \"US\"\n    }],\n    \"metrics\": [{\n        \"key\": \"WebReq\",\n        \"val\": 30\n    },\n    {\n        \"key\": \"TimeSpent\",\n        \"val\": 50\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/insert/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"insert",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Data 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"device\",\n        \"val\": \"web\"\n    },\n    {\n        \"key\": \"country\",\n        \"val\": \"IN\"\n    }],\n    \"metrics\": [{\n        \"key\": \"WebReq\",\n        \"val\": 50\n    },\n    {\n        \"key\": \"TimeSpent\",\n        \"val\": 50\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/insert/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"insert",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Data 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"device\",\n        \"val\": \"mobile\"\n        }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Data 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"country\",\n        \"val\": \"US\"\n        }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Welcome Page",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dim\": [{\n        \"key\": \"country\",\n        \"val\": \"US\"\n        }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
